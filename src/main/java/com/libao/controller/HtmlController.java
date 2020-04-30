@@ -16,6 +16,9 @@ import java.util.UUID;
 
 @Controller
 public class HtmlController{
+    public static void main(String[] args) {
+        System.out.println("666");
+    }
 
     @RequestMapping(value = "json_formdata",method = RequestMethod.GET)
     public String enterIndex(){
