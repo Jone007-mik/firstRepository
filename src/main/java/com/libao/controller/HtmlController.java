@@ -17,6 +17,11 @@ import java.util.UUID;
 @Controller
 public class HtmlController{
 
+    public static void main(String[] args) {
+        System.out.println("第一次提交");
+    }
+
+
     @RequestMapping(value = "json_formdata",method = RequestMethod.GET)
     public String enterIndex(){
         return "index";
@@ -35,6 +40,7 @@ public class HtmlController{
         JsonBean jsonBean=new JsonBean(-1,"no",null);
         if(username!=null){
             System.out.println(username);
+
             jsonBean=new JsonBean(0,"yes",username);
         }
         return jsonBean;
